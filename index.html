@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portfolio - Matías Coletta</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="main-nav" aria-label="principal">
+            <ul>
+                <li><a href="#about-me" aria-label="Sobre mí">Sobre mí</a></li>
+                <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
+                <li><a href="#career" aria-label="Experiencia">Experiencia</a></li>
+                <li><a href="#contact" aria-label="Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="main-buttons">
+            <a href="./en" data-tooltip="Switch to English" data-tooltip-bottom aria-label="Switch to English"><ion-icon name="language-outline"></ion-icon></a>
+            <button aria-hidden="true" id="color-mode"><ion-icon name="contrast-outline"></ion-icon></button>
+        </div>
+    </header>
+    <main>
+        <section aria-label="Introducción" id="hero" class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-inner-content">
+                        <div class="hero-image">
+                            <img src="./img/carpi-foto.png" alt="Carpi sonriendo">
+                        </div>
+                        <div class="hero-main">
+                            <h1 class="hero-title">Soy Carpi 👋</h1>
+                            <p class="hero-subtitle">Desarrollador Frontend</p>
+                            <p class="paragraph">
+                                Nacido en <span class="flag" aria-hidden="true">🇦🇷</span> Argentina y viviendo en <span class="flag" aria-hidden="true">🇪🇸</span> España, motivado siempre por tener nuevos desafíos y experiencias.
+                            </p>
+                            <p class="paragraph">
+                                Actualmente trabajo como profesor en la academia digital Coderhouse y creo contenido educativo sobre Desarrollo Web en mi <a href="https://youtube.com/carpicoder" target="_blank" aria-label="canal de YouTube (abre en una nueva pestaña)">canal de YouTube</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="mouse-scroll-icon" href="#about-me" aria-hidden="true">
+                <i class="bi bi-mouse"></i>
+            </a>
+        </section>
+        <section aria-labelledby="about-me-title" id="about-me" class="section about-me">
+            <div class="container">
+                <h2 id="about-me-title" class="section-title type-mono">Sobre mí</h2>
+                <p class="paragraph">En el año 2014 comencé a trabajar como <strong>Desarrollador Frontend</strong> en <span class="flag" aria-hidden="true">🇦🇷</span> Su Web Express, una de las agencias digitales líderes en Argentina. En 2019 creamos <span class="flag" aria-hidden="true">🇺🇾</span> Urutienda, estoy a cargo del desarrollo y actualizaciones en las plataformas <strong>WordPress</strong> y <strong>WooCommerce</strong>.</p>
+                <p class="paragraph">Desde 2022 también cumplo el rol de <strong>Profesor</strong> en la academia digital Coderhouse, dando clases en el curso de Desarrollo Web, y apoyando este trabajo con mi <a href="https://youtube.com/carpicoder" target="_blank" aria-label="canal de YouTube (abre en una nueva pestaña)">canal de YouTube</a>, donde subo videos y cursos sobre HTML, CSS y JavaScript.</p>
+                <p class="paragraph">Desde el año 2023 estoy viviendo en <span class="flag" aria-hidden="true">🇪🇸</span> España, siempre en búsqueda de nuevos desafíos, experiencias y lugares por conocer.</p>
+                
+                <ul class="skills-list" aria-label="Habilidades">
+                    <li class="skill">HTML5</li>
+                    <li class="skill">CSS3</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">React JS</li>
+                    <li class="skill">JSON</li>
+                    <li class="skill">Bootstrap</li>
+                    <li class="skill">SASS & SCSS</li>
+                    <li class="skill">Git & GitHub</li>
+                </ul>
+
+                <div class="section-footer" aria-hidden="true">
+                    <p>Sobre mí</p>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="portfolio-title" id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2 id="portfolio-title" class="section-title type-mono">Portfolio</h2>
+                <p class="paragraph">Después de haber trabajado en cientos de proyectos durante más de nueve años, sería difícil hacer una lista completa, pero presento una pequeña lista de proyectos recientes que seleccioné para mostrar aquí.</p>
+                <div class="projects-list">
+                    <article class="project" id="project-miletta" aria-labelledby="title-miletta">
+                        <div class="project-icons">
+                            <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
+                            <a
+                                href="#"
+                                aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)"
+                                data-tooltip="Ver repositorio"
+                            >
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a
+                                href="#"
+                                aria-label="Ver deploy (abre en una nueva pestaña)"
+                                data-tooltip="Ver deploy"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <h3 id="title-miletta" class="project-title">Miletta Pastelería</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis dolorum nisi expedita sint, rerum at mollitia ipsa facere. Dicta.</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">SCSS</li>
+                            <li class="skill">Bootstrap</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="project" id="project-miletta" aria-labelledby="title-miletta">
+                        <div class="project-icons">
+                            <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
+                            <a
+                                href="#"
+                                aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)"
+                                data-tooltip="Ver repositorio"
+                            >
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a
+                                href="#"
+                                aria-label="Ver deploy (abre en una nueva pestaña)"
+                                data-tooltip="Ver deploy"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <h3 id="title-miletta" class="project-title">Miletta Pastelería</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis dolorum nisi expedita sint, rerum at mollitia ipsa facere. Dicta.</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">SCSS</li>
+                            <li class="skill">Bootstrap</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="section-footer" aria-hidden="true">
+                    <p>Portfolio</p>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="career-title" id="career" class="section career">
+            <div class="container">
+                <h2 id="career-title" class="section-title type-mono">Experiencia</h2>
+
+                <ul class="jobs-list">
+
+                    <li class="job">
+                        <div class="job-company">
+                            <h3 class="company-title">Coderhouse</h3>
+                            <a
+                                target="_blank"
+                                href="https://coderhouse.com"
+                                class="company-link"
+                                data-tooltip="Ver sitio web"
+                                aria-label="Ver sitio web (abre en una nueva pestaña)"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <p class="company-type">Academia digital</p>
+                        <ul class="roles">
+                            <li class="role">
+                                <p class="title">Profesor en Desarrollo Web</p>
+                                <p class="date">Dic. 2022 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Coordinador de tutores</p>
+                                <p class="date">Nov. 2022 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Tutor en Desarrollo Web y JavaScript</p>
+                                <p class="date">May. 2022 - Actualidad</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-company">
+                            <h3 class="company-title">Carpi Coder</h3>
+                            <a
+                                target="_blank"
+                                href="https://youtube.com/carpicoder"
+                                class="company-link"
+                                data-tooltip="Ver canal"
+                                aria-label="Ver canal (abre en una nueva pestaña)"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <p class="company-type">Canal de YouTube y Agencia freelance</p>
+                        <ul class="roles">
+                            <li class="role">
+                                <p class="title">Videos y cursos educativos</p>
+                                <p class="date">Jul. 2022 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Proyectos freelance</p>
+                                <p class="date">Jun. 2021 - Actualidad</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-company">
+                            <h3 class="company-title">Urutienda</h3>
+                            <a
+                                target="_blank"
+                                href="https://urutienda.com"
+                                class="company-link"
+                                data-tooltip="Ver sitio web"
+                                aria-label="Ver sitio web (abre en una nueva pestaña)"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <p class="company-type">Agencia digital</p>
+                        <ul class="roles">
+                            <li class="role">
+                                <p class="title">Supervisor de Help Desk</p>
+                                <p class="date">Abr. 2020 - Actualidad</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Desarrollador WordPress</p>
+                                <p class="date">Abr. 2020 - Actualidad</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-company">
+                            <h3 class="company-title">Su Web Express</h3>
+                            <a
+                                target="_blank"
+                                href="https://suwebexpress.com.ar"
+                                class="company-link"
+                                data-tooltip="Ver sitio web"
+                                aria-label="Ver sitio web (abre en una nueva pestaña)"
+                            >
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <p class="company-type">Agencia digital</p>
+                        <ul class="roles">
+                            <li class="role">
+                                <p class="title">Project Leader</p>
+                                <p class="date">Sep. 2018 - Jun. 2022</p>
+                            </li>
+                            <li class="role">
+                                <p class="title">Desarrollador Frontend</p>
+                                <p class="date">Abr. 2014 - Jun. 2022</p>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+                <div class="section-footer" aria-hidden="true">
+                    <p>Experiencia</p>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="contact-title" id="contact" class="section contact">
+            <div class="container">
+                <h2 id="contact-title" class="section-title type-mono">Contacto</h2>
+
+                <p class="paragraph">Mi bandeja de entrada está siempre abierta para consultas, proyectos o si simplemente querés pasar a saludar. ¡Te responderé lo antes posible! 👋</p>
+
+                <p class="paragraph">Podés escribirme en <a href="mailto:hola@carpicoder.com">hola@carpicoder.com</a>.</p>
+
+                <div class="section-footer" aria-hidden="true">
+                    <p>Contacto</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer-inner">
+                <a target="_blank" href="https://youtube.com/carpicoder" data-tooltip="YouTube" aria-label="YouTube">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+                <a target="_blank" href="https://instagram.com/carpicoder" data-tooltip="Instagram" aria-label="Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a target="_blank" href="https://github.com/carpicoder" data-tooltip="GitHub" aria-label="GitHub">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a target="_blank" href="https://linkedin.com/in/matiascoletta" data-tooltip="LinkedIn" aria-label="LinkedIn">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <p>Carpi Coder</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./js/color-mode.js"></script>
+    <script src="./js/scroll.js"></script>
+</body>
+</html>
