@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio - Matías Coletta</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     
-    <header class="main-header">
-        <nav class="main-nav" aria-label="principal">
+    <header class="main-header" aria-label="Heading">
+        <nav class="main-nav" aria-label="Main menu">
+            <button class="open-menu" id="open-menu" aria-label="Open menu"><ion-icon name="menu-outline"></ion-icon></button>
             <ul>
+                <button class="close-menu" id="close-menu" aria-label="Close menu"><ion-icon name="close-outline"></ion-icon></button>
                 <li><a href="#about-me" aria-label="About me">About me</a></li>
                 <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
                 <li><a href="#career" aria-label="Career">Career</a></li>
@@ -20,12 +23,12 @@
             </ul>
         </nav>
         <div class="main-buttons">
-            <a href="../" data-tooltip="Cambiar a Español" data-tooltip-bottom aria-label="Cambiar a Español" id="button-language"><ion-icon name="language-outline"></ion-icon></a>
+            <a href="../" data-tooltip="Cambiar a Español" data-tooltip-bottom aria-label="Cambiar a Español"><ion-icon name="language-outline"></ion-icon></a>
             <button aria-hidden="true" id="color-mode"><ion-icon name="contrast-outline"></ion-icon></button>
         </div>
     </header>
-    <main>
-        <section aria-label="Introducción" id="hero" class="hero">
+    <main aria-label="Main content">
+        <section aria-label="Intro" id="hero" class="hero">
             <div class="container">
                 <div class="hero-inner">
                     <div class="hero-inner-content">
@@ -33,38 +36,40 @@
                             <img src="../img/carpi-foto.png" alt="Carpi smiling">
                         </div>
                         <div class="hero-main">
-                            <h1 class="hero-title">I'm Carpi 👋</h1>
+                            <h1 class="hero-title" aria-label="I'm Carpi">I'm Carpi 👋</h1>
                             <p class="hero-subtitle">Frontend Developer</p>
                             <p class="paragraph">
                                 Born in <span class="flag" aria-hidden="true">🇦🇷</span> Argentina and living in <span class="flag" aria-hidden="true">🇪🇸</span> Spain, always motivated by new challenges and experiences.
                             </p>
                             <p class="paragraph">
-                                I currently work as a teacher at the Coderhouse digital academy and I create educational content about Web Development on my <a href="https://youtube.com/carpicoder" target="_blank" aria-label="canal de YouTube (abre en una nueva pestaña)">YouTube channel</a>.
+                                I currently work as a teacher at the digital academy Coderhouse and I create educational content about Web Development on my <a href="https://youtube.com/carpicoder" target="_blank" aria-label="YouTube channel (opens in new tab)">YouTube channel</a>.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="mouse-scroll-icon" href="#about-me" aria-hidden="true">
-                <i class="bi bi-mouse"></i>
-            </a>
+            <div class="rellax-not-centered scroll-icon-container" data-rellax-speed="3">
+                <a class="mouse-scroll-icon" href="#about-me" aria-hidden="true">
+                    <i class="bi bi-mouse"></i>
+                </a>
+            </div>
         </section>
         <section aria-labelledby="about-me-title" id="about-me" class="section about-me">
             <div class="container">
-                <h2 id="about-me-title" class="section-title type-mono">About me</h2>
+                <h2 id="about-me-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="About me">About me</h2>
                 <p class="paragraph">In 2014 I started working as a <strong>Frontend Developer</strong> in <span class="flag" aria-hidden="true">🇦🇷</span> Su Web Express, one of the leading digital agencies in Argentina. In 2019 we created <span class="flag" aria-hidden="true">🇺🇾</span> Urutienda, where I am in charge of development and updates on the <strong>WordPress</strong> and <strong>WooCommerce</strong> platforms.</p>
                 <p class="paragraph">Since 2022 I have also fulfilled the role of <strong>Teacher</strong> at the Coderhouse digital academy, teaching the Web Development course, and supporting this work with my <a href="https://youtube.com/carpicoder" target="_blank" aria-label="YouTube channel (opens in new tab)">YouTube channel</a>, where I upload weekly videos and courses about HTML, CSS and JavaScript.</p>
-                <p class="paragraph">Since 2023 I have been living in <span class="flag" aria-hidden="true">🇪🇸</span> Spain, always looking for new challenges, experiences and places to discover.</p>
+                <p class="paragraph">In 2023 I moved to <span class="flag" aria-hidden="true">🇪🇸</span> Spain, always looking for new challenges, experiences and places to discover.</p>
                 
                 <ul class="skills-list" aria-label="Skills">
-                    <li class="skill">HTML5</li>
-                    <li class="skill">CSS3</li>
-                    <li class="skill">JavaScript</li>
-                    <li class="skill">React JS</li>
-                    <li class="skill">JSON</li>
-                    <li class="skill">Bootstrap</li>
-                    <li class="skill">SASS & SCSS</li>
-                    <li class="skill">Git & GitHub</li>
+                    <li class="skill rellax" data-rellax-speed=".1">HTML5</li>
+                    <li class="skill rellax" data-rellax-speed=".15">CSS3</li>
+                    <li class="skill rellax" data-rellax-speed=".2">JavaScript</li>
+                    <li class="skill rellax" data-rellax-speed=".25">React JS</li>
+                    <li class="skill rellax" data-rellax-speed=".3">JSON</li>
+                    <li class="skill rellax" data-rellax-speed=".35">Bootstrap</li>
+                    <li class="skill rellax" data-rellax-speed=".4">SASS & SCSS</li>
+                    <li class="skill rellax" data-rellax-speed=".45">Git & GitHub</li>
                 </ul>
 
                 <div class="section-footer" aria-hidden="true">
@@ -74,23 +79,23 @@
         </section>
         <section aria-labelledby="portfolio-title" id="portfolio" class="section portfolio">
             <div class="container">
-                <h2 id="portfolio-title" class="section-title type-mono">Portfolio</h2>
-                <p class="paragraph">Having worked on hundreds of projects over nine years, it would be difficult to make a complete list, but here is a small list of recent projects that I have selected to show here.</p>
+                <h2 id="portfolio-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Portfolio">Portfolio</h2>
+                <p class="paragraph">Having worked on hundreds of projects over nine years, it would be difficult to make a complete list, but here is a small list of recent projects that I have selected.</p>
                 <div class="projects-list">
                     <article class="project" id="project-miletta" aria-labelledby="title-miletta">
                         <div class="project-icons">
                             <ion-icon aria-hidden="true" name="folder-outline"></ion-icon>
                             <a
                                 href="#"
-                                aria-label="Watch repository on GitHub (opens in new tab)"
-                                data-tooltip="Watch repository"
+                                aria-label="Ver repositorio en GitHub (abre en una nueva pestaña)"
+                                data-tooltip="Ver repositorio"
                             >
                                 <ion-icon name="logo-github"></ion-icon>
                             </a>
                             <a
                                 href="#"
-                                aria-label="Watch deploy (opens in new tab)"
-                                data-tooltip="Watch deploy"
+                                aria-label="Ver deploy (abre en una nueva pestaña)"
+                                data-tooltip="Ver deploy"
                             >
                                 <ion-icon name="link-outline"></ion-icon>
                             </a>
@@ -141,13 +146,13 @@
         </section>
         <section aria-labelledby="career-title" id="career" class="section career">
             <div class="container">
-                <h2 id="career-title" class="section-title type-mono">Career</h2>
+                <h2 id="career-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Career">Career</h2>
 
-                <ul class="jobs-list">
+                <div class="jobs-list" aria-label="Jobs">
 
-                    <li class="job">
+                    <article class="job" aria-labelledby="coderhouse-title">
                         <div class="job-company">
-                            <h3 class="company-title">Coderhouse</h3>
+                            <h3 class="company-title" id="coderhouse-title">Coderhouse</h3>
                             <a
                                 target="_blank"
                                 href="https://coderhouse.com"
@@ -159,9 +164,9 @@
                             </a>
                         </div>
                         <p class="company-type">Digital academy</p>
-                        <ul class="roles">
+                        <ul class="roles" aria-label="Roles">
                             <li class="role">
-                                <p class="title">Teacher in Web Development</p>
+                                <p class="title">Teacher en Web Development</p>
                                 <p class="date">Dec. 2022 - Present</p>
                             </li>
                             <li class="role">
@@ -173,23 +178,34 @@
                                 <p class="date">May 2022 - Present</p>
                             </li>
                         </ul>
-                    </li>
+                    </article>
 
-                    <li class="job">
+                    <article class="job" aria-labelledby="carpi-coder-title">
                         <div class="job-company">
-                            <h3 class="company-title">Carpi Coder</h3>
-                            <a
-                                target="_blank"
-                                href="https://youtube.com/carpicoder"
-                                class="company-link"
-                                data-tooltip="Watch channel"
-                                aria-label="Watch channel (opens in new tab)"
-                            >
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
+                            <h3 class="company-title" id="carpi-coder-title">Carpi Coder</h3>
+                            <div>
+                                <a
+                                    target="_blank"
+                                    href="https://carpicoder.com"
+                                    class="company-link"
+                                    data-tooltip="Go to website"
+                                    aria-label="Go to website (opens in new tab)"
+                                >
+                                    <ion-icon name="link-outline"></ion-icon>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://youtube.com/carpicoder"
+                                    class="company-link"
+                                    data-tooltip="Watch channel"
+                                    aria-label="Watch channel (opens in new tab)"
+                                >
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </div>
                         </div>
                         <p class="company-type">YouTube channel & Freelance agency</p>
-                        <ul class="roles">
+                        <ul class="roles" aria-label="Roles">
                             <li class="role">
                                 <p class="title">Educational videos and courses</p>
                                 <p class="date">Jul. 2022 - Present</p>
@@ -199,11 +215,11 @@
                                 <p class="date">Jun. 2021 - Present</p>
                             </li>
                         </ul>
-                    </li>
+                    </article>
 
-                    <li class="job">
+                    <article class="job" aria-labelledby="urutienda-title">
                         <div class="job-company">
-                            <h3 class="company-title">Urutienda</h3>
+                            <h3 class="company-title" id="urutienda-title">Urutienda</h3>
                             <a
                                 target="_blank"
                                 href="https://urutienda.com"
@@ -215,7 +231,7 @@
                             </a>
                         </div>
                         <p class="company-type">Digital agency</p>
-                        <ul class="roles">
+                        <ul class="roles" aria-label="Roles">
                             <li class="role">
                                 <p class="title">Help Desk Supervisor</p>
                                 <p class="date">Apr. 2020 - Present</p>
@@ -225,11 +241,11 @@
                                 <p class="date">Apr. 2020 - Present</p>
                             </li>
                         </ul>
-                    </li>
+                    </article>
 
-                    <li class="job">
+                    <article class="job" aria-labelledby="su-web-express-title">
                         <div class="job-company">
-                            <h3 class="company-title">Su Web Express</h3>
+                            <h3 class="company-title" id="su-web-express-title">Su Web Express</h3>
                             <a
                                 target="_blank"
                                 href="https://suwebexpress.com.ar"
@@ -240,8 +256,8 @@
                                 <ion-icon name="link-outline"></ion-icon>
                             </a>
                         </div>
-                        <p class="company-type">Digital Agency</p>
-                        <ul class="roles">
+                        <p class="company-type">Digital agency</p>
+                        <ul class="roles" aria-label="Roles">
                             <li class="role">
                                 <p class="title">Project Leader</p>
                                 <p class="date">Sep. 2018 - Jun. 2022</p>
@@ -251,43 +267,142 @@
                                 <p class="date">Apr. 2014 - Jun. 2022</p>
                             </li>
                         </ul>
-                    </li>
+                    </article>
 
 
-                </ul>
+                </div>
 
                 <div class="section-footer" aria-hidden="true">
                     <p>Career</p>
                 </div>
             </div>
         </section>
+        <section aria-labelledby="testimonials-title" id="testimonials" class="section testimonials">
+            <div class="container">
+                <h2 id="testimonials-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Testimonials">Testimonials</h2>
+
+                <p class="paragraph mb-025">Here are some ratings and comments users leave me in my channel or in the academy.</p>
+                <p class="paragraph paragraph-mini">If you're here and you don't want your name to appear, please write me to <a href="mailto:hola@carpicoder.com">hola@carpicoder.com</a>.</p>
+
+                <div class="swiper mySwiper">
+                    <ul class="swiper-wrapper">
+                        
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">E</div>
+                              <p class="comment-name">Emanuel De Los Santos</p>
+                          </div>
+                          <div class="comment-body">
+                            4 months ago I started in this world and your way of explaining was the best I found, your teachings fit me much better than others. Many thanks for everything!
+                          </div>
+                          <p class="comment-type">YouTube comment</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">A</div>
+                              <p class="comment-name">Andrea Berardi</p>
+                          </div>
+                          <div class="comment-body">
+                            You explain super, I can tell that you really enjoy what you do! Keep it up :) Thanks for sharing.
+                          </div>
+                          <p class="comment-type">YouTube comment</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">S</div>
+                              <p class="comment-name">Santiago Santoro</p>
+                          </div>
+                          <div class="comment-body">
+                            First video I see. I understand you way more than my teacher. You are a genius, I'll subscribe to your channel right now.
+                          </div>
+                          <p class="comment-type">YouTube comment</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">M</div>
+                              <p class="comment-name">Martín Olivera</p>
+                          </div>
+                          <div class="comment-body">
+                            I just finished this course and it has motivated me to continue studying, since I come from a totally different field! Thank you very much, genius 🙌 
+                          </div>
+                          <p class="comment-type">YouTube comment</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">P</div>
+                              <p class="comment-name">Pamela García</p>
+                          </div>
+                          <div class="comment-body">
+                            Your channel was recommended to me by a friend of mine to complement the JS course I'm doing. Congratulations, you explain super! Subscription ✅
+                          </div>
+                          <p class="comment-type">YouTube comment</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">U</div>
+                              <p class="comment-name">Uriel Axel Espeleta</p>
+                          </div>
+                          <div class="comment-body">
+                            The explanation is very clear, you are always the lifesaver for the courses that I have been doing, I complement them with your videos very well.
+                          </div>
+                          <p class="comment-type">YouTube comment</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">M</div>
+                              <p class="comment-name">Gabriel Toledo</p>
+                          </div>
+                          <div class="comment-body">
+                            Very good. I was just looking to make a simple website with HTML and CSS. New subscriber.
+                          </div>
+                          <p class="comment-type">YouTube comment</p>
+                        </li>
+
+                    </ul>
+                    <div aria-hidden="true" class="swiper-pagination"></div>
+                    <div aria-hidden="true" class="swiper-button-prev"></div>
+                    <div aria-hidden="true" class="swiper-button-next"></div>
+                </div>
+  
+
+                <div class="section-footer" aria-hidden="true">
+                    <p>Testimonials</p>
+                </div>
+            </div>
+        </section>
         <section aria-labelledby="contact-title" id="contact" class="section contact">
             <div class="container">
-                <h2 id="contact-title" class="section-title type-mono">Get in touch</h2>
+                <h2 id="contact-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Contact">Contact</h2>
 
                 <p class="paragraph">My inbox is always open if you have a question, a project in mind or just want to say hi. I'll get back to you as soon as possible! 👋</p>
 
                 <p class="paragraph">Write to me at <a href="mailto:hola@carpicoder.com">hola@carpicoder.com</a>.</p>
 
                 <div class="section-footer" aria-hidden="true">
-                    <p>Get in touch</p>
+                    <p>Contact</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" aria-label="Footer">
         <div class="container">
             <div class="main-footer-inner">
-                <a target="_blank" href="https://youtube.com/carpicoder" data-tooltip="YouTube" aria-label="YouTube">
+                <a target="_blank" href="https://youtube.com/carpicoder" data-tooltip="YouTube" aria-label="YouTube (opens in new tab)">
                     <ion-icon name="logo-youtube"></ion-icon>
                 </a>
-                <a target="_blank" href="https://instagram.com/carpicoder" data-tooltip="Instagram" aria-label="Instagram">
+                <a target="_blank" href="https://instagram.com/carpicoder" data-tooltip="Instagram" aria-label="Instagram (opens in new tab)">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
-                <a target="_blank" href="https://github.com/carpicoder" data-tooltip="GitHub" aria-label="GitHub">
+                <a target="_blank" href="https://github.com/carpicoder" data-tooltip="GitHub" aria-label="GitHub (opens in new tab)">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
-                <a target="_blank" href="https://linkedin.com/in/matiascoletta" data-tooltip="LinkedIn" aria-label="LinkedIn">
+                <a target="_blank" href="https://linkedin.com/in/matiascoletta" data-tooltip="LinkedIn" aria-label="LinkedIn (opens in new tab)">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
                 <p>Carpi Coder</p>
@@ -295,12 +410,26 @@
         </div>
     </footer>
 
+    <a href="#" class="go-top" id="go-top" data-tooltip="Go top" data-tooltip-left aria-hidden="true"><ion-icon name="arrow-up-outline"></ion-icon></a> 
+
     <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <!-- RELLAX JS-->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax', { center: true });
+        var rellaxNotCentered = new Rellax('.rellax-not-centered');
+    </script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
+
+    <!-- OWN SCRIPTS -->
     <script src="../js/color-mode.js"></script>
-    <script src="../js/scroll.js"></script>
+    <script src="../js/menu.js"></script>
     <script src="../js/language-en.js"></script>
 </body>
 </html>

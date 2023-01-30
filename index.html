@@ -14,11 +14,11 @@
 </head>
 <body>
     
-    <header class="main-header">
-        <nav class="main-nav" aria-label="principal">
-            <button class="open-menu" id="open-menu"><ion-icon name="menu-outline"></ion-icon></button>
+    <header class="main-header" aria-label="Encabezado">
+        <nav class="main-nav" aria-label="Menú principal">
+            <button class="open-menu" id="open-menu" aria-label="Abrir menú"><ion-icon name="menu-outline"></ion-icon></button>
             <ul>
-                <button class="close-menu" id="close-menu"><ion-icon name="close-outline"></ion-icon></button>
+                <button class="close-menu" id="close-menu" aria-label="Cerrar menú"><ion-icon name="close-outline"></ion-icon></button>
                 <li><a href="#about-me" aria-label="Sobre mí">Sobre mí</a></li>
                 <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
                 <li><a href="#career" aria-label="Experiencia">Experiencia</a></li>
@@ -30,7 +30,7 @@
             <button aria-hidden="true" id="color-mode"><ion-icon name="contrast-outline"></ion-icon></button>
         </div>
     </header>
-    <main>
+    <main aria-label="Contenido principal">
         <section aria-label="Introducción" id="hero" class="hero">
             <div class="container">
                 <div class="hero-inner">
@@ -39,7 +39,7 @@
                             <img src="./img/carpi-foto.png" alt="Carpi sonriendo">
                         </div>
                         <div class="hero-main">
-                            <h1 class="hero-title">Soy Carpi 👋</h1>
+                            <h1 class="hero-title" aria-label="Soy Carpi">Soy Carpi 👋</h1>
                             <p class="hero-subtitle">Desarrollador Frontend</p>
                             <p class="paragraph">
                                 Nacido en <span class="flag" aria-hidden="true">🇦🇷</span> Argentina y viviendo en <span class="flag" aria-hidden="true">🇪🇸</span> España, motivado siempre por tener nuevos desafíos y experiencias.
@@ -57,7 +57,7 @@
                 </a>
             </div>
         </section>
-        <section aria-label="Sobre mí" id="about-me" class="section about-me">
+        <section aria-labelledby="about-me-title" id="about-me" class="section about-me">
             <div class="container">
                 <h2 id="about-me-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Sobre mí">Sobre mí</h2>
                 <p class="paragraph">En el año 2014 comencé a trabajar como <strong>Desarrollador Frontend</strong> en <span class="flag" aria-hidden="true">🇦🇷</span> Su Web Express, una de las agencias digitales líderes en Argentina. En 2019 creamos <span class="flag" aria-hidden="true">🇺🇾</span> Urutienda, estoy a cargo del desarrollo y actualizaciones en las plataformas <strong>WordPress</strong> y <strong>WooCommerce</strong>.</p>
@@ -82,7 +82,7 @@
         </section>
         <section aria-labelledby="portfolio-title" id="portfolio" class="section portfolio">
             <div class="container">
-                <h2 id="portfolio-title" class="section-title type-mono rellax" data-rellax-speed="1">Portfolio</h2>
+                <h2 id="portfolio-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Portfolio">Portfolio</h2>
                 <p class="paragraph">Después de haber trabajado en cientos de proyectos durante más de nueve años, sería difícil hacer una lista completa, pero presento una pequeña lista de proyectos recientes que seleccioné para mostrar aquí.</p>
                 <div class="projects-list">
                     <article class="project" id="project-miletta" aria-labelledby="title-miletta">
@@ -149,13 +149,13 @@
         </section>
         <section aria-labelledby="career-title" id="career" class="section career">
             <div class="container">
-                <h2 id="career-title" class="section-title type-mono rellax" data-rellax-speed="1">Experiencia</h2>
+                <h2 id="career-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Experiencia">Experiencia</h2>
 
-                <ul class="jobs-list">
+                <div class="jobs-list" aria-label="Trabajos">
 
-                    <li class="job">
+                    <article class="job" aria-labelledby="coderhouse-title">
                         <div class="job-company">
-                            <h3 class="company-title">Coderhouse</h3>
+                            <h3 class="company-title" id="coderhouse-title">Coderhouse</h3>
                             <a
                                 target="_blank"
                                 href="https://coderhouse.com"
@@ -167,7 +167,7 @@
                             </a>
                         </div>
                         <p class="company-type">Academia digital</p>
-                        <ul class="roles">
+                        <ul class="roles" aria-label="Roles">
                             <li class="role">
                                 <p class="title">Profesor en Desarrollo Web</p>
                                 <p class="date">Dic. 2022 - Actualidad</p>
@@ -181,11 +181,11 @@
                                 <p class="date">May. 2022 - Actualidad</p>
                             </li>
                         </ul>
-                    </li>
+                    </article>
 
-                    <li class="job">
+                    <article class="job" aria-labelledby="carpi-coder-title">
                         <div class="job-company">
-                            <h3 class="company-title">Carpi Coder</h3>
+                            <h3 class="company-title" id="carpi-coder-title">Carpi Coder</h3>
                             <div>
                                 <a
                                     target="_blank"
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                         <p class="company-type">Canal de YouTube y Agencia freelance</p>
-                        <ul class="roles">
+                        <ul class="roles" aria-label="Roles">
                             <li class="role">
                                 <p class="title">Videos y cursos educativos</p>
                                 <p class="date">Jul. 2022 - Actualidad</p>
@@ -218,11 +218,11 @@
                                 <p class="date">Jun. 2021 - Actualidad</p>
                             </li>
                         </ul>
-                    </li>
+                    </article>
 
-                    <li class="job">
+                    <article class="job" aria-labelledby="urutienda-title">
                         <div class="job-company">
-                            <h3 class="company-title">Urutienda</h3>
+                            <h3 class="company-title" id="urutienda-title">Urutienda</h3>
                             <a
                                 target="_blank"
                                 href="https://urutienda.com"
@@ -234,7 +234,7 @@
                             </a>
                         </div>
                         <p class="company-type">Agencia digital</p>
-                        <ul class="roles">
+                        <ul class="roles" aria-label="Roles">
                             <li class="role">
                                 <p class="title">Supervisor de Help Desk</p>
                                 <p class="date">Abr. 2020 - Actualidad</p>
@@ -244,11 +244,11 @@
                                 <p class="date">Abr. 2020 - Actualidad</p>
                             </li>
                         </ul>
-                    </li>
+                    </article>
 
-                    <li class="job">
+                    <article class="job" aria-labelledby="su-web-express-title">
                         <div class="job-company">
-                            <h3 class="company-title">Su Web Express</h3>
+                            <h3 class="company-title" id="su-web-express-title">Su Web Express</h3>
                             <a
                                 target="_blank"
                                 href="https://suwebexpress.com.ar"
@@ -260,7 +260,7 @@
                             </a>
                         </div>
                         <p class="company-type">Agencia digital</p>
-                        <ul class="roles">
+                        <ul class="roles" aria-label="Roles">
                             <li class="role">
                                 <p class="title">Project Leader</p>
                                 <p class="date">Sep. 2018 - Jun. 2022</p>
@@ -270,10 +270,10 @@
                                 <p class="date">Abr. 2014 - Jun. 2022</p>
                             </li>
                         </ul>
-                    </li>
+                    </article>
 
 
-                </ul>
+                </div>
 
                 <div class="section-footer" aria-hidden="true">
                     <p>Experiencia</p>
@@ -282,7 +282,7 @@
         </section>
         <section aria-label="Valoraciones" id="testimonials" class="section testimonials">
             <div class="container">
-                <h2 id="testimonials-title" class="section-title type-mono rellax" data-rellax-speed="1">Valoraciones</h2>
+                <h2 id="testimonials-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Valoraciones">Valoraciones</h2>
 
                 <p class="paragraph mb-025">Estas son algunas de las valoraciones y comentarios que me dejan los usuarios.</p>
                 <p class="paragraph paragraph-mini">Si aparecés acá y no querés que esté tu nombre, escribime a <a href="mailto:hola@carpicoder.com">hola@carpicoder.com</a>.</p>
@@ -381,7 +381,7 @@
         </section>
         <section aria-labelledby="contact-title" id="contact" class="section contact">
             <div class="container">
-                <h2 id="contact-title" class="section-title type-mono rellax" data-rellax-speed="1">Contacto</h2>
+                <h2 id="contact-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Contacto">Contacto</h2>
 
                 <p class="paragraph">Mi bandeja de entrada está siempre abierta para consultas, proyectos o si simplemente querés pasar a saludar. ¡Te responderé lo antes posible! 👋</p>
 
@@ -393,19 +393,19 @@
             </div>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" aria-label="Pie de página">
         <div class="container">
             <div class="main-footer-inner">
-                <a target="_blank" href="https://youtube.com/carpicoder" data-tooltip="YouTube" aria-label="YouTube">
+                <a target="_blank" href="https://youtube.com/carpicoder" data-tooltip="YouTube" aria-label="YouTube (abre en una nueva pestaña)">
                     <ion-icon name="logo-youtube"></ion-icon>
                 </a>
-                <a target="_blank" href="https://instagram.com/carpicoder" data-tooltip="Instagram" aria-label="Instagram">
+                <a target="_blank" href="https://instagram.com/carpicoder" data-tooltip="Instagram" aria-label="Instagram (abre en una nueva pestaña)">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
-                <a target="_blank" href="https://github.com/carpicoder" data-tooltip="GitHub" aria-label="GitHub">
+                <a target="_blank" href="https://github.com/carpicoder" data-tooltip="GitHub" aria-label="GitHub (abre en una nueva pestaña)">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
-                <a target="_blank" href="https://linkedin.com/in/matiascoletta" data-tooltip="LinkedIn" aria-label="LinkedIn">
+                <a target="_blank" href="https://linkedin.com/in/matiascoletta" data-tooltip="LinkedIn" aria-label="LinkedIn (abre en una nueva pestaña)">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
                 <p>Carpi Coder</p>
