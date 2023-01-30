@@ -82,6 +82,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
 }
 
+.paragraph.mb-025 {
+    margin-bottom: 0.25em;
+}
+
+.paragraph-mini {
+    font-size: .85rem;
+    margin-bottom: 2em;
+}
+
 .paragraph:last-child {
     margin-bottom: 0;
 }
