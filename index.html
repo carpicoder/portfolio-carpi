@@ -72,7 +72,7 @@
                     <li class="skill rellax" data-rellax-speed=".45">Git & GitHub</li>
                 </ul>
 
-                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
+                <div class="section-footer" aria-hidden="true">
                     <p>Sobre mí</p>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                     </article>
                 </div>
 
-                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
+                <div class="section-footer" aria-hidden="true">
                     <p>Portfolio</p>
                 </div>
             </div>
@@ -183,15 +183,26 @@
                     <li class="job">
                         <div class="job-company">
                             <h3 class="company-title">Carpi Coder</h3>
-                            <a
-                                target="_blank"
-                                href="https://youtube.com/carpicoder"
-                                class="company-link"
-                                data-tooltip="Ver canal"
-                                aria-label="Ver canal (abre en una nueva pestaña)"
-                            >
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
+                            <div>
+                                <a
+                                    target="_blank"
+                                    href="https://carpicoder.com"
+                                    class="company-link"
+                                    data-tooltip="Ver sitio web"
+                                    aria-label="Ver sitio web (abre en una nueva pestaña)"
+                                >
+                                    <ion-icon name="link-outline"></ion-icon>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://youtube.com/carpicoder"
+                                    class="company-link"
+                                    data-tooltip="Ver canal"
+                                    aria-label="Ver canal (abre en una nueva pestaña)"
+                                >
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </div>
                         </div>
                         <p class="company-type">Canal de YouTube y Agencia freelance</p>
                         <ul class="roles">
@@ -261,16 +272,16 @@
 
                 </ul>
 
-                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
+                <div class="section-footer" aria-hidden="true">
                     <p>Experiencia</p>
                 </div>
             </div>
         </section>
-        <section aria-labelledby="testimonials-title" id="testimonials" class="section testimonials">
+        <section aria-label="Valoraciones" id="testimonials" class="section testimonials">
             <div class="container">
-                <h2 id="testimonials-title" class="section-title type-mono rellax" data-rellax-speed="1">Comentarios</h2>
+                <h2 id="testimonials-title" class="section-title type-mono rellax" data-rellax-speed="1">Valoraciones</h2>
 
-                <div class="swiper mySwiper" aria-label="Comentarios">
+                <div class="swiper mySwiper">
                     <ul class="swiper-wrapper">
                         
                         <li class="swiper-slide">
@@ -357,8 +368,8 @@
                 </div>
   
 
-                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
-                    <p>Comentarios</p>
+                <div class="section-footer" aria-hidden="true">
+                    <p>Valoraciones</p>
                 </div>
             </div>
         </section>
@@ -370,7 +381,7 @@
 
                 <p class="paragraph">Podés escribirme en <a href="mailto:hola@carpicoder.com">hola@carpicoder.com</a>.</p>
 
-                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
+                <div class="section-footer" aria-hidden="true">
                     <p>Contacto</p>
                 </div>
             </div>
@@ -395,6 +406,8 @@
             </div>
         </div>
     </footer>
+
+    <a href="#" class="go-top" id="go-top" data-tooltip="Ir arriba" data-tooltip-left aria-hidden="true"><ion-icon name="arrow-up-outline"></ion-icon></a> 
 
     <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

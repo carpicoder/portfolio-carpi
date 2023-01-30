@@ -166,6 +166,20 @@ h1, h2, h3, h4, h5, h6 {
     visibility: visible;
 }
 
+[data-tooltip][data-tooltip-left]::after {
+    bottom: unset;
+    left: unset;
+    transform: translateX(-2rem);
+    right: 100%;
+}
+
+[data-tooltip][data-tooltip-left]:hover::after {
+    bottom: unset;
+    left: unset;
+    transform: translateX(0);
+    right: 100%;
+}
+
 
 /* HEADER */
 
@@ -656,6 +670,7 @@ h1, h2, h3, h4, h5, h6 {
 .swiper {
     width: 100%;
     z-index: 0;
+    padding-bottom: 2.5rem;
 }
 
 .swiper-slide {
@@ -672,6 +687,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .swiper-slide:hover {
     border-color: var(--clr-details);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    top: 45%;
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
@@ -756,6 +775,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.go-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--clr-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transform: translateY(2rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+
+.go-top.visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.go-top ion-icon {
+    display: flex;
+    pointer-events: none;
+}
+
+
 
 @media screen and (max-width: 850px) {
     .hero-title {
@@ -793,6 +839,10 @@ h1, h2, h3, h4, h5, h6 {
     .open-menu,
     .close-menu {
         display: flex;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
     }
 }
 
@@ -860,5 +910,18 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 450px) {
     .section-title {
         font-size: 2.5rem;
+    }
+    .section-footer {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-footer {
+        font-size: 1.6rem;
     }
 }
