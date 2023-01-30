@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portfolio - Matías Coletta</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     
     <header class="main-header">
         <nav class="main-nav" aria-label="principal">
+            <button class="open-menu" id="open-menu"><ion-icon name="menu-outline"></ion-icon></button>
             <ul>
+                <button class="close-menu" id="close-menu"><ion-icon name="close-outline"></ion-icon></button>
                 <li><a href="#about-me" aria-label="Sobre mí">Sobre mí</a></li>
                 <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
                 <li><a href="#career" aria-label="Experiencia">Experiencia</a></li>
@@ -45,36 +48,38 @@
                     </div>
                 </div>
             </div>
-            <a class="mouse-scroll-icon" href="#about-me" aria-hidden="true">
-                <i class="bi bi-mouse"></i>
-            </a>
+            <div class="rellax-not-centered scroll-icon-container" data-rellax-speed="3">
+                <a class="mouse-scroll-icon" href="#about-me" aria-hidden="true">
+                    <i class="bi bi-mouse"></i>
+                </a>
+            </div>
         </section>
-        <section aria-labelledby="about-me-title" id="about-me" class="section about-me">
+        <section aria-label="Sobre mí" id="about-me" class="section about-me">
             <div class="container">
-                <h2 id="about-me-title" class="section-title type-mono">Sobre mí</h2>
+                <h2 id="about-me-title" class="section-title type-mono rellax" data-rellax-speed="1" aria-label="Sobre mí">Sobre mí</h2>
                 <p class="paragraph">En el año 2014 comencé a trabajar como <strong>Desarrollador Frontend</strong> en <span class="flag" aria-hidden="true">🇦🇷</span> Su Web Express, una de las agencias digitales líderes en Argentina. En 2019 creamos <span class="flag" aria-hidden="true">🇺🇾</span> Urutienda, estoy a cargo del desarrollo y actualizaciones en las plataformas <strong>WordPress</strong> y <strong>WooCommerce</strong>.</p>
                 <p class="paragraph">Desde 2022 también cumplo el rol de <strong>Profesor</strong> en la academia digital Coderhouse, dando clases en el curso de Desarrollo Web, y apoyando este trabajo con mi <a href="https://youtube.com/carpicoder" target="_blank" aria-label="canal de YouTube (abre en una nueva pestaña)">canal de YouTube</a>, donde subo videos y cursos sobre HTML, CSS y JavaScript.</p>
                 <p class="paragraph">Desde el año 2023 estoy viviendo en <span class="flag" aria-hidden="true">🇪🇸</span> España, siempre en búsqueda de nuevos desafíos, experiencias y lugares por conocer.</p>
                 
                 <ul class="skills-list" aria-label="Habilidades">
-                    <li class="skill">HTML5</li>
-                    <li class="skill">CSS3</li>
-                    <li class="skill">JavaScript</li>
-                    <li class="skill">React JS</li>
-                    <li class="skill">JSON</li>
-                    <li class="skill">Bootstrap</li>
-                    <li class="skill">SASS & SCSS</li>
-                    <li class="skill">Git & GitHub</li>
+                    <li class="skill rellax" data-rellax-speed=".1">HTML5</li>
+                    <li class="skill rellax" data-rellax-speed=".15">CSS3</li>
+                    <li class="skill rellax" data-rellax-speed=".2">JavaScript</li>
+                    <li class="skill rellax" data-rellax-speed=".25">React JS</li>
+                    <li class="skill rellax" data-rellax-speed=".3">JSON</li>
+                    <li class="skill rellax" data-rellax-speed=".35">Bootstrap</li>
+                    <li class="skill rellax" data-rellax-speed=".4">SASS & SCSS</li>
+                    <li class="skill rellax" data-rellax-speed=".45">Git & GitHub</li>
                 </ul>
 
-                <div class="section-footer" aria-hidden="true">
+                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
                     <p>Sobre mí</p>
                 </div>
             </div>
         </section>
         <section aria-labelledby="portfolio-title" id="portfolio" class="section portfolio">
             <div class="container">
-                <h2 id="portfolio-title" class="section-title type-mono">Portfolio</h2>
+                <h2 id="portfolio-title" class="section-title type-mono rellax" data-rellax-speed="1">Portfolio</h2>
                 <p class="paragraph">Después de haber trabajado en cientos de proyectos durante más de nueve años, sería difícil hacer una lista completa, pero presento una pequeña lista de proyectos recientes que seleccioné para mostrar aquí.</p>
                 <div class="projects-list">
                     <article class="project" id="project-miletta" aria-labelledby="title-miletta">
@@ -134,14 +139,14 @@
                     </article>
                 </div>
 
-                <div class="section-footer" aria-hidden="true">
+                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
                     <p>Portfolio</p>
                 </div>
             </div>
         </section>
         <section aria-labelledby="career-title" id="career" class="section career">
             <div class="container">
-                <h2 id="career-title" class="section-title type-mono">Experiencia</h2>
+                <h2 id="career-title" class="section-title type-mono rellax" data-rellax-speed="1">Experiencia</h2>
 
                 <ul class="jobs-list">
 
@@ -256,20 +261,116 @@
 
                 </ul>
 
-                <div class="section-footer" aria-hidden="true">
+                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
                     <p>Experiencia</p>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="testimonials-title" id="testimonials" class="section testimonials">
+            <div class="container">
+                <h2 id="testimonials-title" class="section-title type-mono rellax" data-rellax-speed="1">Comentarios</h2>
+
+                <div class="swiper mySwiper" aria-label="Comentarios">
+                    <ul class="swiper-wrapper">
+                        
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">E</div>
+                              <p class="comment-name">Emanuel De Los Santos</p>
+                          </div>
+                          <div class="comment-body">
+                            Hace 4 meses arranqué con este mundo y tu forma de explicar fue la mejor que encontré, me quedan mucho mejor tus enseñanzas que otras. Muchas gracias por todo! 
+                          </div>
+                          <p class="comment-type">Comentario en YouTube</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">A</div>
+                              <p class="comment-name">Andrea Berardi</p>
+                          </div>
+                          <div class="comment-body">
+                              Explicás súper, se nota que realmente disfrutás lo que hacés! Seguí así :) Gracias por compartirlo.
+                          </div>
+                          <p class="comment-type">Comentario en YouTube</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">S</div>
+                              <p class="comment-name">Santiago Santoro</p>
+                          </div>
+                          <div class="comment-body">
+                                Primer video que veo. Te entiendo muchísimo mas que a mi profesor. Sos un genio, ya me suscribo a tu canal.
+                          </div>
+                          <p class="comment-type">Comentario en YouTube</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">M</div>
+                              <p class="comment-name">Martín Olivera</p>
+                          </div>
+                          <div class="comment-body">
+                                Acabo de terminar este curso y me ha motivado a seguir estudiando, ya que vengo de un rubro totalmente diferente! Muchisimas gracias genio 🙌 
+                          </div>
+                          <p class="comment-type">Comentario en YouTube</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">P</div>
+                              <p class="comment-name">Pamela García</p>
+                          </div>
+                          <div class="comment-body">
+                            Me recomendó tu canal una compañera para complementar el curso de JS que estoy haciendo. Te felicito, ¡explicás súper! Suscripción ✅
+                          </div>
+                          <p class="comment-type">Comentario en YouTube</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">U</div>
+                              <p class="comment-name">Uriel Axel Espeleta</p>
+                          </div>
+                          <div class="comment-body">
+                            Muy clara la explicación, siempre sos el salvavidas para los cursos que vengo haciendo, complemento con tus videos muy bien.
+                          </div>
+                          <p class="comment-type">Comentario en YouTube</p>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="comment-header">
+                              <div aria-hidden="true" class="comment-icon">M</div>
+                              <p class="comment-name">Gabriel Toledo</p>
+                          </div>
+                          <div class="comment-body">
+                            Muy bueno. Justo estaba buscando para hacer una web sencilla con HTML y CSS. Nuevo suscriptor. 
+                          </div>
+                          <p class="comment-type">Comentario en YouTube</p>
+                        </li>
+
+                    </ul>
+                    <div aria-hidden="true" class="swiper-pagination"></div>
+                    <div aria-hidden="true" class="swiper-button-prev"></div>
+                    <div aria-hidden="true" class="swiper-button-next"></div>
+                </div>
+  
+
+                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
+                    <p>Comentarios</p>
                 </div>
             </div>
         </section>
         <section aria-labelledby="contact-title" id="contact" class="section contact">
             <div class="container">
-                <h2 id="contact-title" class="section-title type-mono">Contacto</h2>
+                <h2 id="contact-title" class="section-title type-mono rellax" data-rellax-speed="1">Contacto</h2>
 
                 <p class="paragraph">Mi bandeja de entrada está siempre abierta para consultas, proyectos o si simplemente querés pasar a saludar. ¡Te responderé lo antes posible! 👋</p>
 
                 <p class="paragraph">Podés escribirme en <a href="mailto:hola@carpicoder.com">hola@carpicoder.com</a>.</p>
 
-                <div class="section-footer" aria-hidden="true">
+                <div class="section-footer rellax" aria-hidden="true" data-rellax-speed="2">
                     <p>Contacto</p>
                 </div>
             </div>
@@ -299,7 +400,19 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <!-- RELLAX JS-->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax', { center: true });
+        var rellaxNotCentered = new Rellax('.rellax-not-centered');
+    </script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+
+    <!-- OWN SCRIPTS -->
     <script src="./js/color-mode.js"></script>
-    <script src="./js/scroll.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
