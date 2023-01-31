@@ -782,6 +782,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: .9rem;
     line-height: 1.3;
 }
+
+.comment-type span {
+    display: block;
+    font-size: .75rem;
+    color: var(--clr-gray);
+}
   
 
 /* FOOTER */
@@ -858,6 +864,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .paragraph {
         font-size: 1.2rem;
+    }
+    
+    .paragraph-mini {
+        font-size: .75rem;
     }
 }
 
