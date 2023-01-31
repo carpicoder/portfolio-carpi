@@ -347,6 +347,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    padding-block: 1rem;
 }
 
 .hero-inner-content {
@@ -974,6 +975,10 @@ h1, h2, h3, h4, h5, h6 {
     .swiper-button-next, .swiper-button-prev {
         display: none;
     }
+
+    .main-header {
+        position: sticky;
+    }
 }
 
 @media screen and (max-width: 675px) {
@@ -1022,10 +1027,6 @@ h1, h2, h3, h4, h5, h6 {
         order: 2;
         align-self: center;
         width: auto;
-    }
-
-    .main-header {
-        position: sticky;
     }
 
     .scroll-icon-container {

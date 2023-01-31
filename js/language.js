@@ -9,7 +9,7 @@ function detectLanguage(){
         }
     } else {
         if (!userLang.startsWith("es")) {
-            document.location.href="/en";
+            document.location.href="./en";
         }
     }
 }
