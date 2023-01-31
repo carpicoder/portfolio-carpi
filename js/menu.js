@@ -22,12 +22,15 @@ menuItems.forEach(item => {
 /* GO TOP */
 
 let goTopButton = document.querySelector("#go-top");
+let scrollDownButton = document.querySelector("#scroll-down");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         goTopButton.classList.add("visible");
+        scrollDownButton.classList.remove("visible");
     } else {
         goTopButton.classList.remove("visible");
+        scrollDownButton.classList.add("visible");
     }
 }
