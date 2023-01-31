@@ -364,9 +364,28 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
+.main-title {
+    font-family: var(--ff-text);
+    background-color: var(--clr-details);
+    background-image: url("../img/noise.png");
+    color: var(--clr-text);
+    width: max-content;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .25rem .75rem;
+    border-radius: .5rem;
+}
+
+.main-title::selection {
+    background-color: var(--clr-text);
+    color: var(--clr-bg);
+}
+
 .hero-title {
     font-size: 4.5rem;
     font-weight: 600;
+    font-family: var(--ff-title);
+    line-height: 1.2;
 }
 
 .hero-title span {
