@@ -6,6 +6,8 @@ function detectLanguage(){
     if(localStorage.getItem("language")){
         if(localStorage.getItem("language") == "es"){
             return
+        } else {
+            document.location.href="./en";
         }
     } else {
         if (!userLang.startsWith("es")) {
@@ -14,3 +16,9 @@ function detectLanguage(){
     }
 }
 detectLanguage();
+
+const buttonLanguage = document.querySelector("#button-language");
+
+buttonLanguage.addEventListener("click", () => {
+    localStorage.setItem('language', 'en');
+})
