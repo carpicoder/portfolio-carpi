@@ -137,8 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills-titles {
-    margin-top: 2rem;
-    font-size: 1.2rem
+    font-size: 1rem;
 }
 
 .container {
@@ -557,10 +556,17 @@ h1, h2, h3, h4, h5, h6 {
 /** SKILLS **/
 
 .skills-list {
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    column-gap: 1rem;
+    row-gap: .5rem;
+}
+
+.about-me .skills-list {
+    margin-top: 2rem;
 }
 
 .skill {
